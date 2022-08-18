@@ -1,4 +1,4 @@
-## https://colab.research.google.com/drive/1PRfQ1W-Sn-PxmwI53RIQRXMdoNULlvq3
+## https://colab.research.google.com/drive/1PRfQ1W-Sn-PxmwI53RIQRXMdoNULlvq3?usp=sharing
 
 game_rps <- function () {
   ## setting
