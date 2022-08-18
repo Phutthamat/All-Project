@@ -1,4 +1,5 @@
 
+## https://colab.research.google.com/drive/1yXcWf4UklTkFLXwMeQdUeMAN_mwHR4t5?usp=sharing
 ## function start Game
 def rsp_game():
     import random
