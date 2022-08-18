@@ -1,6 +1,6 @@
 -- create table customers
 create table customers (
-		customerId int not null,
+	customerId int not null,
   	name text not null,
   	phone int,  
 primary key (customerId)
@@ -9,7 +9,7 @@ primary key (customerId)
 
 -- insert data into customers
 insert into customers values
-	(1, 'Somchai', '+661111111'),
+  (1, 'Somchai', '+661111111'),
   (2, 'Prayut' , '+662222222'),
   (3, 'Boondee', null), 
   (4, 'Judy', '+664444444'), 
@@ -103,7 +103,7 @@ primary key (employeeId)
 
 -- insert data into employees
 insert into employees values
-	(1, 'Airi', '+667678888'),
+  (1, 'Airi', '+667678888'),
   (2, 'Chiyoko' , '+667779900'),
   (3, 'Hana', '+667786666'), 
   (4, 'Kazuko', '+662231234'), 
@@ -129,7 +129,7 @@ select * from customers
 where phone is null;
 
 select
-	  A.customerId,
+    A.customerId,
     A.Name customerName,
     B.orderId,
     B.noItem no_Item
@@ -138,7 +138,7 @@ join orders B on A.customerId = B.customerId
 order by A.customerId;
 
 select
-	  A.customerId,
+    A.customerId,
     A.Name customerName,
     B.reviewDetail reviews
 from customers A 
@@ -146,7 +146,7 @@ join reviews B on A.customerId = B.customerId
 where B.reviewDetail is not null;
 
 select
-	  A.employeeId,
+    A.employeeId,
     A.employeeName,
     B.orderId,
     b.noItem
@@ -167,7 +167,7 @@ join menus C on A.menuId = C.menuId
 join employees D on A.employeeId = D.employeeId;
 
 select
-		customers.name, 
+    customers.name, 
     sum(orders.noItem) as n_Item
 from customers  
 join orders on customers.customerId = orders.orderId 
