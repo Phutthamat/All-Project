@@ -114,8 +114,8 @@ insert into employees values
   (9, 'Takaya', '+669001111'), 
   (10, 'Daiki', '+669099999'); 
   
--- select and Join table
   
+-- select and Join table
 select * from customers;
 select * from orders;
 select * from menus;
