@@ -90,3 +90,4 @@ df_2017_to_2020['Status Profit'] = np.where(df_2017_to_2020['Profit'] > 0 ,'Prof
 lost_profit_2017_to_2020 = df_2017_to_2020[df_2017_to_2020['Status Profit'] =='Lost']
 lost_profit_2017_to_2020[ ['Order ID','Order Date','Category','Discount', 'Profit' ,'Status Profit'] ]
 
+
